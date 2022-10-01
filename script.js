@@ -1,7 +1,7 @@
 // document.getElementById("count-el").innerText=a;
 let a=0;
 let b=0;
-let str1="",str2="";//,str3="<tr><td>No of batch</td><td>No of entry</td></tr>";
+let str1="";//,str3="<tr><td>No of batch</td><td>No of entry</td></tr>";
 function increment(){
     a++;
     document.getElementById("count-el").innerText=a;
@@ -16,12 +16,11 @@ function reset(){
 }
 function save(){
     b++;
-    str2+="<tr><td>"+b+"</td><td>"+a+"</td></tr>";
-    str1=str2;
+    str1+="<tr><td>"+b+"</td><td>"+a+"</td></tr>";
     document.getElementById("save1").innerHTML=str1;
 }
 function clear1(){
-    str2="";
+    str1="";
     b=0;
-    document.getElementById("save").innerHTML="";
+    document.getElementById("save1").innerHTML="";
 }
